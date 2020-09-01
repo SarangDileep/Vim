@@ -106,3 +106,9 @@ c3w - change 3 words
 d+shift+g -delete till end of file from the cursor point
 
 d+gg -delete till start of file from cursor point
+
+# Advanced commands
+
+:r!command -run a linux command within vim
+
+:term -open terminal from within vim
