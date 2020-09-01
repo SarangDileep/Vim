@@ -34,6 +34,22 @@ v   -visually select
 
 x -delete the character pointed by the cursor
 
+gg-move to begining of file
+
+shift+g -move to end of file
+
+shift+h -move to top
+
+shift+m -move to middle
+
+shift+l -move to bottom
+
+w -move to next word
+
+b-move to previous word
+
+e-move to end of a word
+
 shift+v -visually select a block
 
 c -change(Delete and enter into insert mode)
@@ -56,6 +72,8 @@ da -Delete and
 
 d$-delete till end(from the cursor position)
 
+u-undo
+
 y -yank
 
 *y -yank such that u can paste it even outside vim
@@ -65,6 +83,8 @@ y -yank
 :vsplit -Vertical split
 
 :split -Horizontal split
+
+:earlier 10s -takes to how the file was earlier 10 sec ago(give m for minutes)
 
 ctrl+n -autocompletion option
 
@@ -76,3 +96,10 @@ Shift+v,y -yank selected text
 :%s/old/new/g -replace old with new in the entire file
 
 10j -move 10 times down(you can replace 10 with any number and j with other motions(h,k,l))
+
+3w -move 3 words
+
+d3w -deletes 3 word
+
+c3w - change 3 words
+
