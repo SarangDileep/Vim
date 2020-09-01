@@ -103,3 +103,6 @@ d3w -deletes 3 word
 
 c3w - change 3 words
 
+d+shift+g -delete till end of file from the cursor point
+
+d+gg -delete till start of file from cursor point
