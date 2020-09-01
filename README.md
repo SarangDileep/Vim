@@ -93,8 +93,6 @@ ctrl+n -autocompletion option
 
 Shift+v,y -yank selected text
 
-:%s/old/new/g -replace old with new in the entire file
-
 10j -move 10 times down(you can replace 10 with any number and j with other motions(h,k,l))
 
 3w -move 3 words
@@ -112,3 +110,5 @@ d+gg -delete till start of file from cursor point
 :r!command -run a linux command within vim
 
 :term -open terminal from within vim
+
+:%s/old/new/g -replace old with new in the entire file
