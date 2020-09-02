@@ -1,114 +1,82 @@
 # Vim
 
-vim is a very light and easily costomizable editor
+> vim is a very light and easily costomizable editor
 
 
 
 # Basic commands:
 
-i  -Enter insert mode
+`i` 
+___
+Enter insert mode
 
-a -append
+`a` 
+___
+append
 
-:q -quit
+`:q` -quit
 
-:wq -save and quit
+`:wq` -save and quit
 
-h -left
+`h` -left
 
-l-right
+`l`-right
 
-j-down
+`j`-down
 
-k-up
+`k`-up
 
-shift+i -insert at begining of the line
+`shift+i` -insert at begining of the line
 
-shift+a -insert at end of line
+`shift+a` -insert at end of line
 
-$ -move to end of a line
+`$` -move to end of a line
 
-^ -move to begining of a line
+`^` -move to begining of a line
 
-v   -visually select
+`v`   -visually select
 
-x -delete the character pointed by the cursor
+`x` -delete the character pointed by the cursor
 
-gg-move to begining of file
+`shift+v` -visually select a block
 
-shift+g -move to end of file
+`c` -change(Delete and enter into insert mode)
 
-shift+h -move to top
+`ci` -change in (eg:-'ci(' changes everything inside the brackets)
 
-shift+m -move to middle
+`ciw` -change in a word(the cursor can be anywhere on the word)
 
-shift+l -move to bottom
+`ca`  -change and (eg:-'ca(' Deletes everything inside the brackets along with the bracket and enters insert mode)
 
-w -move to next word
+`c$` -change till end(from cursor point)
 
-b-move to previous word
+`dd` -Delete a line
 
-e-move to end of a word
+`diw` -Delete in a word
 
-shift+v -visually select a block
+`di` -Delete in
 
-c -change(Delete and enter into insert mode)
+`da` -Delete and
 
-ci -change in (eg:-'ci(' changes everything inside the brackets)
+`d$` -delete till end(from the cursor position)
 
-ciw -change in a word(the cursor can be anywhere on the word)
+`y` -yank
 
-ca  -change and (eg:-'ca(' Deletes everything inside the brackets along with the bracket and enters insert mode)
+`*y` -yank such that u can paste it even outside vim
 
-c$ -change till end(from cursor point)
+`?word` -searches the word in file
 
-dd -Delete a line
+`:vsplit` -Vertical split
 
-diw -Delete in a word
+`:split` -Horizontal split
 
-di -Delete in
-
-da -Delete and
-
-d$-delete till end(from the cursor position)
-
-u-undo
-
-y -yank
-
-*y -yank such that u can paste it even outside vim
-
-?word -searches the word in file
-
-:vsplit -Vertical split
-
-:split -Horizontal split
-
-:earlier 10s -takes to how the file was earlier 10 sec ago(give m for minutes)
-
-ctrl+n -autocompletion option
+`ctrl+n` -autocompletion option
 
 
 # command combos:
 
-Shift+v,y -yank selected text
+`Shift+v,y` -yank selected text
 
-10j -move 10 times down(you can replace 10 with any number and j with other motions(h,k,l))
+`:%s/old/new/g` -replace old with new in the entire file
 
-3w -move 3 words
-
-d3w -deletes 3 word
-
-c3w - change 3 words
-
-d+shift+g -delete till end of file from the cursor point
-
-d+gg -delete till start of file from cursor point
-
-# Advanced commands
-
-:r!command -run a linux command within vim
-
-:term -open terminal from within vim
-
-:%s/old/new/g -replace old with new in the entire file
+`10j` -move 10 times down(you can replace 10 with any number and j with other motions(h,k,l))
