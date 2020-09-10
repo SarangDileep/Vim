@@ -1,8 +1,6 @@
 # Vim
 
-> vim is a very light and easily costomizable editor
-
-
+> vim is a very light and easily customizable editor.
 
 # Basic commands:
 
@@ -12,71 +10,85 @@ Enter insert mode
 
 `a` 
 ___
-append
+Append
 
-`:q` -quit
+## Exit
 
-`:wq` -save and quit
+`:q` - Quit
 
-`h` -left
+`:wq` - Write/Save and quit
 
-`l`-right
+## Navigation
 
-`j`-down
+`h` - Left
 
-`k`-up
+`l`- Right
 
-`shift+i` -insert at begining of the line
+`j`- Down
 
-`shift+a` -insert at end of line
+`k`- Up
 
-`$` -move to end of a line
+`$` - Move to end of a line
 
-`^` -move to begining of a line
+`^` - Move to begining of a line
 
-`v`   -visually select
+## Insert
 
-`x` -delete the character pointed by the cursor
+`shift+i` -  Insert at begining of the line
 
-`shift+v` -visually select a block
+`shift+a` - Insert at end of line (append)
 
-`c` -change(Delete and enter into insert mode)
+`c` - Change(Delete and enter into insert mode)
 
-`ci` -change in (eg:-'ci(' changes everything inside the brackets)
+`ci` - Change in (eg:-'ci(' changes everything inside the brackets)
 
-`ciw` -change in a word(the cursor can be anywhere on the word)
+`ciw` - Change in a word(the cursor can be anywhere on the word)
 
-`ca`  -change and (eg:-'ca(' Deletes everything inside the brackets along with the bracket and enters insert mode)
+`ca`  - Change and (eg:-'ca(' Deletes everything inside the brackets along with the bracket and enters insert mode)
 
-`c$` -change till end(from cursor point)
+`c$` - Change till end(from cursor point)
 
-`dd` -Delete a line
+## Deleting
 
-`diw` -Delete in a word
+`x` - Delete the character pointed by the cursor
 
-`di` -Delete in
+`dd` - Delete a line
 
-`da` -Delete and
+`diw` - Delete in a word
 
-`d$` -delete till end(from the cursor position)
+`di` - Delete in
 
-`y` -yank
+`da` - Delete and
 
-`*y` -yank such that u can paste it even outside vim
+`d$` - Delete till end(from the cursor position)
 
-`?word` -searches the word in file
+## Yanking and selecting
 
-`:vsplit` -Vertical split
+`y` - Yank
 
-`:split` -Horizontal split
+`*y` - Yank such that you can paste it even outside vim
 
-`ctrl+n` -autocompletion option
+`v` - Visually select (enters visual mode)
+
+`shift+v` -  Visually select a block
+
+## Others
+
+`?word` - Searches the word in file
+
+`:vsplit` - Vertical split
+
+`:split` - Horizontal split
+
+`ctrl+n` -  Autocompletion option
 
 
-# command combos:
+# Command combos:
 
-`Shift+v,y` -yank selected text
+`Shift+v,y` - yank selected text
 
-`:%s/old/new/g` -replace old with new in the entire file
+`:%s/old/new/g` - replace old with new in the entire file
 
-`10j` -move 10 times down(you can replace 10 with any number and j with other motions(h,k,l))
+`:%s/old/new/gc` - replace old with new in the entire file, with a prompt asking you for confirmation for each word.
+
+`10j` - move 10 times down(you can replace 10 with any number and j with other motions(h,k,l))
